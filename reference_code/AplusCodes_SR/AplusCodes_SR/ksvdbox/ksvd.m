@@ -412,7 +412,7 @@ end
 %%%%% normalize the dictionary %%%%%
 
 D = normcols(D); 
-
+ 
 err = zeros(1,iternum);
 gerr = zeros(1,iternum);
 
