@@ -9,6 +9,8 @@ Created on Fri Nov 24 15:34:27 2017
 import numpy as np
 import scipy as sp
 from skimage import color,io,img_as_float,transform
+from collect import collect
+from ksvd import ksvd
 
 def convert_ycbcr_y(f):
     rgb = io.imread(f)
@@ -24,7 +26,7 @@ load_imgs = io.ImageCollection(str,load_func = convert_ycbcr_y)
 #io.imshow(coll_img[40])
 
 # Configuration
-conf = {'scale': 3, 'level': 1, 'window': [3,3],
+conf = {'scale': 3, 'level': 1, 'window': [5,5],
         'border': [1,1], 'upsample_factor': 3, 'filters': {},
         'interpolate_kernel': 'bicubic', 'overlap': [2,2]}
 
@@ -43,7 +45,8 @@ L = np.append(L,1)
 L = L/2.0;
 L.shape = (1,3+2*O.size)
 
-filters = {'filter1':G,'filter2':G.T,'filter3':L,'filter4':L.T}
+#filters = {'filter1':G,'filter2':G.T,'filter3':L,'filter4':L.T}
+filters = {1:G,2:G.T,3:L,4:L.T}
 conf['filters'] = filters
 
 def modcrop(imgs,scale):
