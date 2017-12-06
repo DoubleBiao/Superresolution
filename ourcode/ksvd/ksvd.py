@@ -94,15 +94,18 @@ def ksvd(max_iter,n_components,transform_n_nonzero_coefs,X):
         
     #init dictionary
     Xnorm2 = (X**2).sum(axis = 0)
-    nonzerosam = np.nonzero(Xnorm2 > 1e-6)[0]
-    tol = 1e-6
+    nonzerosam = np.nonzero(Xnorm2 > 1e-3)[0]
+    tol = 1e-3
     D = X[:,np.random.choice(nonzerosam,n_components)]
     D /= np.linalg.norm(D, axis=0)
     gamma = np.zeros((n_components,X.shape[1]))
     erec = np.zeros(max_iter)
     for ite in range(max_iter):
+        print("The {}-th iteration is running now\n".format(ite))
         for i in range(X.shape[1]):
             gamma[:,i] = omp(D,X[:,i])
+        
+        print("\t Reach the end of the first loop")
         e = np.linalg.norm(X - D.dot(gamma))
         erec[ ite ] = e
         if e < tol:
@@ -119,6 +122,8 @@ def ksvd(max_iter,n_components,transform_n_nonzero_coefs,X):
             g = np.dot(Xrnm.T - np.dot(D,gamma[:,I]).T,d)
             D[:,j] = d
             gamma[j,I] = g.T
+            if j%10 == 0:
+                print("\t Reach the {}-th iteration of the second loop".format(j))
 
     return D,gamma
 
