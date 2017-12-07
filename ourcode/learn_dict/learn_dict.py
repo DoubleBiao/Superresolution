@@ -9,8 +9,9 @@ Created on Fri Nov 24 15:34:27 2017
 import numpy as np
 import scipy as sp
 from skimage import color,io,img_as_float,transform
-from collect import collect
-from ksvd import ksvd
+from collect_1 import collect
+from ksvd_1 import ksvd
+#from sklearn.decomposition import PCA
 
 def convert_ycbcr_y(f):
     rgb = io.imread(f)
@@ -26,9 +27,9 @@ load_imgs = io.ImageCollection(str,load_func = convert_ycbcr_y)
 #io.imshow(coll_img[40])
 
 # Configuration
-conf = {'scale': 3, 'level': 1, 'window': [5,5],
+conf = {'scale': 3, 'level': 1, 'window': [3,3],
         'border': [1,1], 'upsample_factor': 3, 'filters': {},
-        'interpolate_kernel': 'bicubic', 'overlap': [2,2]}
+        'interpolate_kernel': 'bicubic', 'overlap': [1,1]}
 
 O = np.zeros((conf['upsample_factor']-1))
 #G = np.array([1,O,-1]); # Gradient
@@ -132,7 +133,11 @@ evals.shape = (end,1)
 conf['V_pca'] = evecs[:, k:end]; 
 conf['ksvd_conf'] = ksvd_conf;
 features_pca = np.dot(conf['V_pca'].T , features)
-    
+#pca = PCA(n_components = 30)
+#pca.fit(features.T)
+#features_pca = pca.transform(features.T).T
+
+print("Feature size pca: {}\n".format(features_pca.shape))    
 ksvd_conf['data'] = features_pca
 
 # KSVD
@@ -148,16 +153,5 @@ g_gt = np.dot(gamma , gamma.T)
 dict_hires = np.dot(p_gt , sp.linalg.inv(g_gt))
 
 conf['dict_hires'] = dict_hires;     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     

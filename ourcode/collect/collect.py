@@ -73,7 +73,7 @@ def extract(X, scale, filters, window, overlap, border):
     """
     # compute one grid for all filters
     grid = sampling_grid(X.shape, window, overlap, border, scale)
-    feature_size = window[0] * window[1] * len(filters) * scale * scale
+    feature_size = window[0] * window[1] * len(filters) #* scale * scale
 
     # Current image features extraction [featrue x index]
     if not filters:
@@ -81,7 +81,8 @@ def extract(X, scale, filters, window, overlap, border):
         f = indexOut(X, grid)
         features = f.reshape((f.shape[0]*f.shape[1], f.shape[2]))
     else:
-        features = np.zeros((feature_size,grid.shape[2]))
+#        features = np.zeros((feature_size,grid.shape[2]))
+        features = np.array([])
         for i in range(len(filters)):
             print(i)
 #            print(filters[i+1])
@@ -99,8 +100,11 @@ def extract(X, scale, filters, window, overlap, border):
             
             print("Shape of f after reshaping: {}\n".format(f.shape))
             print("Shape of feature:{} \n".format(features.shape))
-            
-            features[(i*f.shape[0]):((i+1)*f.shape[0]), : ] = f
+            if len(features) == 0:
+                features = f
+            else:
+                features = np.concatenate((features, f), axis = 0)
+            # features[(i*f.shape[0]):((i+1)*f.shape[0]), : ] = f
     return features
 
 def sampling_grid(img_size, window, overlap, border, scale):
@@ -124,7 +128,8 @@ def sampling_grid(img_size, window, overlap, border, scale):
     
     print("Window size is: {}\n".format(window))
     # Create sampling grid for overlapping window
-    idx = np.array(range(img_size[0]*img_size[1])).reshape(img_size)
+    idx = np.array(range(img_size[0]*img_size[1])).reshape((img_size[1],img_size[0])).T
+#    idx = idx.T
     
     # don't know why there is an element-wise deduction in the source code
     grid = idx[0:window[0], 0:window[1]].reshape((window[0],window[1],1))
@@ -133,8 +138,10 @@ def sampling_grid(img_size, window, overlap, border, scale):
     # Compute offsets for grid's displacement
     # skip in the source code
     stride = [window[0]-overlap[0], window[1]-overlap[1]]
-    offset = idx[1+border[0]:img_size[0]-window[0]+1-border[0]:stride[0], 1+border[1]:img_size[1]-window[1]+1-border[1]:stride[1]]
-#    offset = idx[border[0]:img_size[0]-window[0]-border[0]:stride[0], border[1]:img_size[1]-window[1]-border[1]:stride[1]]
+    offset = idx[border[0]:img_size[0]-window[0]-border[0]+1:stride[0], \
+                 border[1]:img_size[1]-window[1]-border[1]+1:stride[1]]
+    
+    #    offset = idx[border[0]:img_size[0]-window[0]-border[0]:stride[0], border[1]:img_size[1]-window[1]-border[1]:stride[1]]
     offset = offset.reshape((1,1,offset.size))
     
     print("Offset size: {}\n".format(offset.size))
@@ -143,7 +150,7 @@ def sampling_grid(img_size, window, overlap, border, scale):
     print("Shape 1: {}\nShape 2: {}\n".format(np.tile(offset, [window[0], window[1], 1]).shape,np.tile(grid,[1, 1, offset.size]).shape))
     print("Offset shape: {}, grid shape: {}\n".format(offset.shape, grid.shape))
     
-    grid = np.tile(offset, [window[0], window[1], 1]) + np.tile(grid,[1, 1, offset.size])#.reshape(9,9,3180)
+    grid = np.tile(offset, [window[0], window[1], 1]) + np.tile(grid,[1, 1, offset.size])
     return grid
     
 def indexOut(img, grid):

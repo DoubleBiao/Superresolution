@@ -49,7 +49,7 @@ def omp(X, y, ncoef=None, maxit=200, tol=1e-3, ztol=1e-12):
         rc = rcov[i]
 
         if rc < ztol:
-            print('All residual covariances are below threshold.')
+#            print('All residual covariances are below threshold.')
             break
         
         if i not in active:
@@ -105,9 +105,10 @@ def ksvd(max_iter,n_components,transform_n_nonzero_coefs,X):
         for i in range(X.shape[1]):
             gamma[:,i] = omp(D,X[:,i])
         
-        print("\t Reach the end of the first loop")
+#        print("\t Reach the end of the first loop")
         e = np.linalg.norm(X - D.dot(gamma))
         erec[ ite ] = e
+        print("The Error is:",e)
         if e < tol:
             break
         for j in range(n_components):
@@ -122,20 +123,20 @@ def ksvd(max_iter,n_components,transform_n_nonzero_coefs,X):
             g = np.dot(Xrnm.T - np.dot(D,gamma[:,I]).T,d)
             D[:,j] = d
             gamma[j,I] = g.T
-            if j%10 == 0:
-                print("\t Reach the {}-th iteration of the second loop".format(j))
+#            if j%10 == 0:
+#                print("\t Reach the {}-th iteration of the second loop".format(j))
 
     return D,gamma
 
      
-######## using example###########   
-atomlen = 30
-dictsize = 100
-samplenum = 200
-X = np.random.randn(atomlen,samplenum)
-y = np.random.randn(atomlen)
-itetimes = 10
-Tdata = 6
-
-
-D,gamma = ksvd(itetimes,dictsize,Tdata,X)
+######### using example###########   
+#atomlen = 30
+#dictsize = 100
+#samplenum = 200
+#X = np.random.randn(atomlen,samplenum)
+#y = np.random.randn(atomlen)
+#itetimes = 10
+#Tdata = 6
+#
+#
+#D,gamma = ksvd(itetimes,dictsize,Tdata,X)
