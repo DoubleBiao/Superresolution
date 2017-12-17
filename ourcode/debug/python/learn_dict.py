@@ -1,42 +1,41 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov 24 15:34:27 2017
+Created on Sat Dec 16 21:40:04 2017
 
 @author: serafina
 """
 
+
 import numpy as np
 import scipy as sp
 from skimage import color,io,img_as_float,transform
-#from collect import collect
+from collect import collect
 from ksvd import ksvd
 
+# Convert images from RGB color space to Y_Cb_Cr color space
 def convert_ycbcr_y(f):
     rgb = io.imread(f)
     ycbcr = color.rgb2ycbcr(rgb)
     ycbcr = img_as_float(ycbcr)/255
     return ycbcr[:,:,0]
     
-
 str = 'CVPR08-SR/Data/Training' + '/*.bmp'
 
 load_imgs = io.ImageCollection(str,load_func = convert_ycbcr_y)
 
-io.imshow(load_imgs[40])
-
 # Configuration
 conf = {'scale': 3, 'level': 1, 'window': [3,3],
         'border': [1,1], 'upsample_factor': 3, 'filters': {},
-        'interpolate_kernel': 'bicubic', 'overlap': [2,2]}
+        'interpolate_kernel': 'bicubic', 'overlap': [1,1]}
 
 O = np.zeros((conf['upsample_factor']-1))
-#G = np.array([1,O,-1]); # Gradient
+
+# Define Gaussian filter and Laplacian filter
 G = np.array([1])
 G = np.concatenate((G,O))
 G = np.append(G,-1)
 G.shape = (1,2+O.size)
-#L = np.array([1,O,-2,O,1])/2; # Laplacian
 L = np.array([1])
 L = np.concatenate((L,O))
 L = np.append(L,-2)
@@ -45,9 +44,10 @@ L = np.append(L,1)
 L = L/2.0;
 L.shape = (1,3+2*O.size)
 
-filters = {'filter1':G,'filter2':G.T,'filter3':L,'filter4':L.T}
+filters = {1:G,2:G.T,3:L,4:L.T}
 conf['filters'] = filters
 
+# Crop images
 def modcrop(imgs,scale):
     imgs_c = []
     for i in range(len(imgs)):
@@ -60,7 +60,7 @@ def modcrop(imgs,scale):
     
 hires = modcrop(load_imgs, conf['scale'])
  
-  
+# Downsampling high resolution images to get low resolution image set  
 lores = []
 for i in range(len(hires)):
     img = hires[i]
@@ -68,8 +68,8 @@ for i in range(len(hires)):
     scale = conf['scale']
     img_l = transform.resize(img,(sz[0]/scale,sz[1]/scale))    
     lores.append(img_l)
-#lores = np.asarray(lores)
     
+# Upsampling low resolution images to get middle resolution image set
 midres = []
 for i in range(len(lores)):
     img = lores[i]
@@ -77,11 +77,11 @@ for i in range(len(lores)):
     scale = conf['upsample_factor']
     img_m = transform.resize(img,(sz[0]*scale,sz[1]*scale))    
     midres.append(img_m)
-#midres = np.asarray(midres)
     
-# COLLECT 
-#features = collect(midres, conf['scale'], conf['filters'], conf['window'], conf['overlap'], conf['border']);
-   
+# Call COLLECT function to extract features in middle resolution images 
+features = collect(midres, conf['scale'], conf['filters'], conf['window'], conf['overlap'], conf['border']);
+  
+ # Upsampling low resolution images to get interpolated images
 interpolated = []
 for i in range(len(lores)):
     img = lores[i]
@@ -90,30 +90,20 @@ for i in range(len(lores)):
     img_i = transform.resize(img,(sz[0]*scale,sz[1]*scale))    
     interpolated.append(img_i)
 
+# Subtract each image in high resolution set and interpolated set to get patches matrix
 patches = []
 for i in range(len(hires)):
     img_h = hires[i]
     img_l = interpolated[i]
     img_p = img_h - img_l
-    patches.append(img_p)
-#patches = np.asarray(patches)    
+    patches.append(img_p)    
     
-# COLLECT    
-#patches = collect(patches, conf['scale'], {}, conf['window'], conf['overlap'], conf['border']);
-
-# comment    
-features_1 = sp.io.matlab.mio.loadmat('features.mat')
-features = features_1['features']
-
-# comment
-patches_1 = sp.io.matlab.mio.loadmat('patches.mat') 
-patches = patches_1['patches']
+# Call COLLECT function to extract features in patches matrix
+patches = collect(patches, conf['scale'], {}, conf['window'], conf['overlap'], conf['border']);
     
 # Set KSVD configuration
-ksvd_conf = {'iternum': 5, 'memusage': 'normal', 'dictsize': 1024,
+ksvd_conf = {'iternum': 20, 'memusage': 'normal', 'dictsize': 1024,
         'Tdata': 3, 'samples': patches.shape[1]}
-
-
 
 # PCA dimensionality reduction
 C = np.dot(features , features.T)
@@ -135,30 +125,15 @@ features_pca = np.dot(conf['V_pca'].T , features)
 ksvd_conf['data'] = features_pca
 
 # KSVD
-# Training process 
+# Training process: Call KSVD function to get low resolution dictionary and gamma matrix
 conf['dict_lores'], gamma2 = ksvd(ksvd_conf['iternum'],ksvd_conf['dictsize'],ksvd_conf['Tdata'],ksvd_conf['data']) 
-  
-# comment    
-#gamma_1 = sp.io.matlab.mio.loadmat('gamma.mat')
-#gamma2 = gamma_1['gamma2']
-#
+
+print(gamma2.shape)
 p_gt = np.dot(patches , gamma2.T)
 g_gt = np.dot(gamma2 , gamma2.T)
-#g_gt = sp.sparse.csr_matrix(g_gt).todense()
-#g_gt = sp.sparse.csr_matrix.todense((g_gt))
+
+# Use gamma matrix and patches matrix to get high resolution dictionary
 dict_hires = np.dot(p_gt , sp.linalg.inv(g_gt))
 
 conf['dict_hires'] = dict_hires;     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
