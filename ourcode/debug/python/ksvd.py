@@ -6,8 +6,9 @@ Created on Mon Nov 13 20:28:47 2017
 """
 
 import numpy as np
+from sklearn.linear_model import orthogonal_mp_gram
 
-def omp(X, y, ncoef=None, maxit=200, tol=1e-3, ztol=1e-12):
+def omp(X, y, ncoef=None, maxit=200, tol=1e-6, ztol=1e-12):
     """ orthogonal matching pursuit. Compute the sparse representation of input 
     y using dictionary X
     input: 
@@ -49,7 +50,7 @@ def omp(X, y, ncoef=None, maxit=200, tol=1e-3, ztol=1e-12):
         rc = rcov[i]
 
         if rc < ztol:
-            print('All residual covariances are below threshold.')
+            #print('All residual covariances are below threshold.')
             break
         
         if i not in active:
@@ -92,50 +93,77 @@ def ksvd(max_iter,n_components,transform_n_nonzero_coefs,X):
         gamma is a sample
         """
         
+    # replace unuse atoms
+
     #init dictionary
     Xnorm2 = (X**2).sum(axis = 0)
     nonzerosam = np.nonzero(Xnorm2 > 1e-3)[0]
-    tol = 1e-3
-    D = X[:,np.random.choice(nonzerosam,n_components)]
+    tol = 1e-6
+    
+    ###for debug
+    
+    #D1 = X[:,nonzerosam[0:1024]]
+    D = X[:,np.random.choice(nonzerosam,n_components,replace = False)]
+    
+    
     D /= np.linalg.norm(D, axis=0)
+    
+    
     gamma = np.zeros((n_components,X.shape[1]))
     erec = np.zeros(max_iter)
     for ite in range(max_iter):
         print("The {}-th iteration is running now\n".format(ite))
         for i in range(X.shape[1]):
-            gamma[:,i] = omp(D,X[:,i])
-        
-        print("\t Reach the end of the first loop")
-        e = np.linalg.norm(X - D.dot(gamma))
+            gamma[:,i] = omp(D,X[:,i],ncoef=3)
+ 
+        e = np.linalg.norm(X - D.dot(gamma),axis = 0)
+        e = np.sqrt(sum(e)/e.size)
+   
         erec[ ite ] = e
+        print("error",e)
         if e < tol:
             break
+        
+        replaced_atoms = np.zeros(n_components)
+        unused_sigs = np.arange(X.shape[1])
+        
+        p = np.arange(n_components)#np.random.permutation(n_components)
         for j in range(n_components):
-            D[:,j] = 0
-            I = np.nonzero(gamma[j,:] > tol)[0]
+            I = np.nonzero(gamma[p[j],:] > tol)[0]
             if np.sum(I) == 0:
-                continue
-            g = gamma[j,I].T
-            Xrnm = X[:,I]
-            d = np.dot(Xrnm - np.dot(D,gamma[:,I]),g)
-            d = d/np.linalg.norm(d)
-            g = np.dot(Xrnm.T - np.dot(D,gamma[:,I]).T,d)
-            D[:,j] = d
-            gamma[j,I] = g.T
-            if j%10 == 0:
-                print("\t Reach the {}-th iteration of the second loop".format(j))
-
+                #continue
+                perm = np.random.permutation(len(unused_sigs))
+                E = np.sum((X[:,unused_sigs[perm]] - D.dot(gamma[:,unused_sigs[perm]]))**2, axis = 0)
+                i = np.argmax(E)
+                atom = X[:,unused_sigs[perm[i]]]
+                atom = atom/np.linalg.norm(atom)
+                D[:,p[j]] = atom;
+                unused_sigs = np.delete(unused_sigs,perm[i])
+                replaced_atoms[j] = 1;
+            else:
+                D[:,p[j]] = 0
+                g = gamma[p[j],I].T
+                Xrnm = X[:,I]
+                d = np.dot(Xrnm - np.dot(D,gamma[:,I]),g)
+                d = d/np.linalg.norm(d)
+                g = np.dot(Xrnm.T - np.dot(D,gamma[:,I]).T,d)
+                D[:,p[j]] = d
+                gamma[p[j],I] = g.T
+         
     return D,gamma
 
-     
-######## using example###########   
-#atomlen = 30
-#dictsize = 100
-#samplenum = 200
-#X = np.random.randn(atomlen,samplenum)
-#y = np.random.randn(atomlen)
-#itetimes = 10
-#Tdata = 6
-#
-#
-#D,gamma = ksvd(itetimes,dictsize,Tdata,X)
+atomlen = 100
+dictsize = 200
+samplenum = 400
+X = np.random.randn(atomlen,samplenum)
+y = np.random.randn(atomlen)
+itetimes = 5
+Tdata = 6
+
+
+D,gamma = ksvd(itetimes,dictsize,Tdata,X)
+
+gt = gamma.dot(gamma.T)
+
+print(np.linalg.matrix_rank(gt))
+np.linalg.inv(gt)
