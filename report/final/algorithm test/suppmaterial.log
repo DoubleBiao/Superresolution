@@ -1,0 +1,164 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.30)  15 DEC 2017 20:53
+entering extended mode
+**./suppmaterial.tex
+(suppmaterial.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks16
+\c@algorithm=\count88
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\c@ALC@unique=\count89
+\c@ALC@line=\count90
+\c@ALC@rem=\count91
+\c@ALC@depth=\count92
+\ALC@tlm=\skip43
+\algorithmicindent=\skip44
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen103
+))
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks19
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks20
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+) (suppmaterial.aux)
+\openout1 = `suppmaterial.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+
+Overfull \hbox (17.0795pt too wide) in paragraph at lines 22--22
+[]\OT1/cmr/bx/n/14.4 Appendix.B Per-sudo Code of Neu-ral Q-Learning 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (suppmaterial.aux) ) 
+Here is how much of TeX's memory you used:
+ 1159 strings out of 493335
+ 13251 string characters out of 3140558
+ 71200 words of memory out of 3000000
+ 4724 multiletter control sequences out of 15000+200000
+ 7456 words of font info for 27 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,7n,20p,247b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+<F:/L
+aTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmbx10.pfb><F:/LaTeX/MikTeX
+Exepanded/fonts/type1/public/amsfonts/cm/cmbx12.pfb><F:/LaTeX/MikTeXExepanded/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfo
+nts/cm/cmmib10.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/La
+TeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/LaTeX/MikTeXE
+xepanded/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on suppmaterial.pdf (1 page, 98069 bytes).
+PDF statistics:
+ 42 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

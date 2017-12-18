@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{amsmath}
+
+\begin{document}
+\section{Persudo Code of Superresolution}
+\begin{algorithm}[H]
+	\caption{Dictionary-Learning Process} 
+	\label{alg1}
+	\begin{algorithmic}
+            \STATE \textbf{STEP  1.} Load training images.
+            
+            \STATE \textbf{STEP  2.} Converts images from RGB color space to YCbCr color space and save the illuminance(Y) value.
+            
+            \STATE \textbf{STEP  3.} Crop the images and save as \textbf{high resolution images} set.
+            
+            \STATE \textbf{STEP  4.} Downsampling the high resolution images to get \textbf{low resolution images} set.
+            
+            \STATE \textbf{STEP  5.} Upsampling the low resolution images to get \textbf{middle resolution images} set.
+            
+            \STATE \textbf{STEP  6.} Call \textit{collect} function to extract features for each image in middle resolution set and get \textbf{features} matrix.
+            
+            \STATE \textbf{STEP  7.} Upsampling the low resolution images to get  \textbf{interpolated images} set.
+            
+            \STATE \textbf{STEP  8.} Subtract each images in high resolution set and in interpolated images set to get patches set.
+            
+            \STATE \textbf{STEP  9.} Call \textit{collect} function to extract features for each image in patches set and get \textbf{patches} matrix.
+            
+            \STATE \textbf{STEP 10.} Implement dimensionality reduction on features matrix based on PCA and get \textbf{features\_pca} matrix.
+            
+            \STATE \textbf{STEP 11.} Call \textit{ksvd} function using features\_pca to train for the \textbf{low resolution dictionary} as well as \textbf{gamma} matrix.
+            
+            \STATE \textbf{STEP 12.} Calculate high resolution dictionary $D_h$ using formula : $D_h = PQ^T(QQ^T)^{-1}$  (P: patches matrix  Q: gamma matrix)
+
+	\end{algorithmic}
+\end{algorithm}
+
+\end{document}

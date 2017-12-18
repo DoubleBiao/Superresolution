@@ -1,0 +1,22 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'report1.blg'
+[38] biber-MSWIN64:290> INFO - === 
+[69] Biber.pm:351> INFO - Reading 'report1.bcf'
+[165] Biber.pm:776> INFO - Found 12 citekeys in bib section 0
+[179] Biber.pm:3493> INFO - Processing section 0
+[207] Biber.pm:3657> INFO - Looking for bibtex format file 'SR.bib' for section 0
+[214] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[216] bibtex.pm:1048> INFO - Found BibTeX data source 'SR.bib'
+[258] Utils.pm:149> WARN - ISBN '978-1-4673-1228-8 978-1-4673-1226-4 978-1-4673-1227-1' in entry 'kaibing_zhang_multi-scale_2012' is invalid - run biber with '--validate_datamodel' for details.
+[266] Utils.pm:149> WARN - I didn't find a database entry for 'banger_opencl_2013' (section 0)
+[266] Utils.pm:149> WARN - I didn't find a database entry for 'noauthor_process_2017' (section 0)
+[266] Utils.pm:149> WARN - I didn't find a database entry for 'noauthor_thread_2017' (section 0)
+[266] Utils.pm:149> WARN - I didn't find a database entry for 'noauthor_task_2017' (section 0)
+[266] Utils.pm:149> WARN - I didn't find a database entry for 'noauthor_parallel_nodate' (section 0)
+[283] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[283] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[283] Biber.pm:3306> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[283] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[291] bbl.pm:526> INFO - Writing 'report1.bbl' with encoding 'ascii'
+[293] bbl.pm:619> INFO - Output to report1.bbl
+[294] Biber.pm:108> INFO - WARNINGS: 6

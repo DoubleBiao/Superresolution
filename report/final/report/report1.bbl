@@ -1,0 +1,304 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{aharon_rm_2006}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1ef8e21e83b7296dcd84660d8f288140}{%
+           family={Aharon},
+           family_i={A\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=567ee5511c7edca04b6f4e6f94d1142f}{%
+           family={Elad},
+           family_i={E\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=33d278141877e20e20782ba6f54ca959}{%
+           family={Bruckstein},
+           family_i={B\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a47cc02392a55444dc8a98fffa4cc717}
+      \strng{fullhash}{a47cc02392a55444dc8a98fffa4cc717}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1053-587X}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shorttitle}{\$rm {K}\$-{SVD}}
+      \field{title}{\$rm {K}\$-{SVD}: {An} {Algorithm} for {Designing} {Overcomplete} {Dictionaries} for {Sparse} {Representation}}
+      \field{urlday}{31}
+      \field{urlmonth}{10}
+      \field{urlyear}{2017}
+      \field{volume}{54}
+      \field{year}{2006}
+      \field{pages}{4311\bibrangedash 4322}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TSP.2006.881199
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/1710377/
+      \endverb
+    \endentry
+    \entry{irofti_gpu_2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=55c188f4fe3668b651b3dce5d365022b}{%
+           family={Irofti},
+           family_i={I\bibinitperiod},
+           given={Paul},
+           given_i={P\bibinitperiod}}}%
+        {{hash=a705b9cbcb6305c7a2bfa582dc5878bb}{%
+           family={Dumitrescu},
+           family_i={D\bibinitperiod},
+           given={Bogdan},
+           given_i={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{45f02a8f03ce16ca2a722759ad16ae33}
+      \strng{fullhash}{45f02a8f03ce16ca2a722759ad16ae33}
+      \field{sortinit}{I}
+      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Signal {Processing} {Conference}}
+      \field{title}{{GPU} parallel implementation of the approximate {K}-{SVD} algorithm using {OpenCL}}
+      \field{year}{2014}
+      \field{pages}{271\bibrangedash 275}
+      \range{pages}{5}
+      \verb{file}
+      \verb Snapshot:files/632/s.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/6952053/
+      \endverb
+    \endentry
+    \entry{jianchao_yang_image_2010}{article}{}
+      \name{author}{4}{}{%
+        {{hash=83645a9e8e5c7f2d06fe982a1143f10e}{%
+           family={{Jianchao Yang}},
+           family_i={J\bibinitperiod}}}%
+        {{hash=08d606d3cdd9e3e64020f253922ab631}{%
+           family={Wright},
+           family_i={W\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+        {{hash=f80eec08255c038ba027f3201d60cc71}{%
+           family={Huang},
+           family_i={H\bibinitperiod},
+           given={Thomas\bibnamedelima S},
+           given_i={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=257d86ddbd21767baf5cfd4e2e2a7c46}{%
+           family={{Yi Ma}},
+           family_i={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a024775a64a27f191ad0eaf144fea35a}
+      \strng{fullhash}{ca2c3dead2100a1023b59428cf426ae9}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1057-7149}
+      \field{journaltitle}{IEEE Transactions on Image Processing}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Image {Super}-{Resolution} {Via} {Sparse} {Representation}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \field{volume}{19}
+      \field{year}{2010}
+      \field{pages}{2861\bibrangedash 2873}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TIP.2010.2050625
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/5466111/
+      \endverb
+    \endentry
+    \entry{kaibing_zhang_multi-scale_2012}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a188949fc930e512bd4b12cfef25883a}{%
+           family={{Kaibing Zhang}},
+           family_i={K\bibinitperiod}}}%
+        {{hash=209759f25467ebbe47427ba543d17868}{%
+           family={{Xinbo Gao}},
+           family_i={X\bibinitperiod}}}%
+        {{hash=e4db6283c26211eeda9cdf441185d790}{%
+           family={{Dacheng Tao}},
+           family_i={D\bibinitperiod}}}%
+        {{hash=f417d40b7200b7d28eed34a011981e99}{%
+           family={{Xuelong Li}},
+           family_i={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c9a735ce3bb2a145bb3def0480a59bca}
+      \strng{fullhash}{552c70d65783dfb1b3cc5fb5639069d9}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4673-1228-8 978-1-4673-1226-4 978-1-4673-1227-1}
+      \field{month}{06}
+      \field{title}{Multi-scale dictionary for single image super-resolution}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \field{year}{2012}
+      \field{pages}{1114\bibrangedash 1121}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CVPR.2012.6247791
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/6247791/
+      \endverb
+    \endentry
+    \entry{nasrollahi_super-resolution:_2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a62a0df58d6908409f38bb65a14c4fca}{%
+           family={Nasrollahi},
+           family_i={N\bibinitperiod},
+           given={Kamal},
+           given_i={K\bibinitperiod}}}%
+        {{hash=1aba6ff9e2829b4ff0fa2d527a3d7325}{%
+           family={Moeslund},
+           family_i={M\bibinitperiod},
+           given={Thomas\bibnamedelima B.},
+           given_i={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d3d3f6c6ed520a528d6eb78498ecd2a}
+      \strng{fullhash}{4d3d3f6c6ed520a528d6eb78498ecd2a}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Machine Vision \& Applications}
+      \field{number}{6}
+      \field{shorttitle}{Super-resolution}
+      \field{title}{Super-resolution: a comprehensive survey}
+      \field{volume}{25}
+      \field{year}{2014}
+      \field{pages}{1423\bibrangedash 1468}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1007/s00138-014-0623-4
+      \endverb
+      \verb{file}
+      \verb Snapshot:files/664/s.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/article/10.1007/s00138-014-0623-4
+      \endverb
+    \endentry
+    \entry{rubinstein_efficient_2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=41a554df1d9814fdbf290e5299e9ba2a}{%
+           family={Rubinstein},
+           family_i={R\bibinitperiod},
+           given={Ron},
+           given_i={R\bibinitperiod}}}%
+        {{hash=f5f486236aae151a166ce12a6d0fdb6b}{%
+           family={Zibulevsky},
+           family_i={Z\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+        {{hash=20b8206f111f40a7edb0499bc22b9375}{%
+           family={Elad},
+           family_i={E\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b4634bd49af52110f38f05440871fcb}
+      \strng{fullhash}{3b4634bd49af52110f38f05440871fcb}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cs Technion}
+      \field{title}{Efficient {Implementation} of the {K}-{SVD} {Algorithm} {Using} {Batch} {Orthogonal} {Matching} {Pursuit}}
+      \field{volume}{40}
+      \field{year}{2009}
+      \verb{file}
+      \verb Snapshot:files/660/s.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.researchgate.net/publication/251229200_Efficie
+      \endverb
+    \endentry
+    \entry{timofte_anchored_2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=740c788a36355395a6809932b5f84ab5}{%
+           family={Timofte},
+           family_i={T\bibinitperiod},
+           given={Radu},
+           given_i={R\bibinitperiod}}}%
+        {{hash=9c416980a01600a2dc6099337d5d8fbb}{%
+           family={De},
+           family_i={D\bibinitperiod},
+           given={Vincent},
+           given_i={V\bibinitperiod}}}%
+        {{hash=5fdb9fa53d476a58c4cd9ec531daadf2}{%
+           family={Gool},
+           family_i={G\bibinitperiod},
+           given={Luc\bibnamedelima Van},
+           given_i={L\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e6882f649399e80104f6cad4bb96d96c}
+      \strng{fullhash}{e6882f649399e80104f6cad4bb96d96c}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4799-2840-8}
+      \field{month}{12}
+      \field{title}{Anchored {Neighborhood} {Regression} for {Fast} {Example}-{Based} {Super}-{Resolution}}
+      \field{urlday}{11}
+      \field{urlmonth}{10}
+      \field{urlyear}{2017}
+      \field{year}{2013}
+      \field{pages}{1920\bibrangedash 1927}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCV.2013.241
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/6751349/
+      \endverb
+    \endentry
+  \endsortlist
+  \missing{banger_opencl_2013}
+  \missing{noauthor_parallel_nodate}
+  \missing{noauthor_thread_2017}
+  \missing{noauthor_process_2017}
+  \missing{noauthor_task_2017}
+\endrefsection
+\endinput
+

@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{amsmath}
+
+\begin{document}
+\section{Persudo Code of Superresolution}
+\begin{algorithm}[H]
+	\caption{Approximate K-SVD} 
+	\label{alg1}
+	\begin{algorithmic}
+            \STATE \textbf{Input}: Singal set \(\mathbf{X}\), initial dictionary \(\mathbf{D_0}\), target sparsity \(K\), number of iterations \(k\)   
+            
+            \STATE \textbf{Output}: Dictionary \(\mathbf{D}\) and sparse matrix \(\mathbf{\Gamma}\) such that \(\mathbf{X}\approx\mathbf{D\Gamma}\)
+            
+            \STATE \textbf{Init} Set \(\mathbf{D}\leftarrow\mathbf{D_0}\)
+            
+            \FOR {\(n=1,\dots,k\)}
+	             \STATE \(\mathbf{\Gamma}=\mathrm{OMP}(\mathbf{X},\mathbf{D})\)
+	             \FOR {\(j=1,\dots,L\)}
+		             \STATE \(\mathbf{D}_j\leftarrow0\)
+		             \STATE \(I\leftarrow\)\{ \textsl{indices of the signals in \(\mathbf{\Gamma}_i\) whose \(i\) element is non-zero}  \}
+		             \STATE \(g\leftarrow\mathbf{\Gamma}^T_{j,I}\)
+		             \STATE \(d \leftarrow \mathbf{X}_{I}g - \mathbf{D\Gamma}_{I}g\)
+		             \STATE \(d \leftarrow d/\lVert d\rVert_2\)
+		             \STATE \(g \leftarrow \mathbf{X}_I^Td-(\mathbf{D\Gamma_I}^T)d\)
+		             \STATE \(\mathbf{D}_j \leftarrow d  \)
+		             \STATE \(\mathbf{\Gamma}_{j,I} \leftarrow g^T \)
+	             \ENDFOR
+            \ENDFOR
+            
+	\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}[H]
+	\caption{Parallelized Orthogonal Matching Pursuit(OMP)} 
+	\label{alg2}
+	\begin{algorithmic}
+		\STATE \textbf{Input}: Dictionary \(\mathbf{D_0}\), batch of signals \(x_i\), target sparsity \(T\)   
+		
+		\STATE \textbf{Output}: Sparse Representations \(\gamma\) 
+		
+		\STATE \textbf{Init} Set \(I\leftarrow\{\},\,r\leftarrow x,\Gamma\leftarrow0\)
+	
+		\FOR {\(i=1,\dots,T\)}
+			\STATE \(\mathbf{k}\leftarrow \mathbf{D}r \)
+			\STATE \(k^* \leftarrow \max{\{\mathbf{k}\}}\)
+			\STATE \(I \leftarrow (I,k^*)\)
+			\STATE \(x_i = \mathbf{D}_Ir_i\)
+			\STATE \(r_i\leftarrow x_i - \mathbf{D}_I\gamma_I\) 
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\caption{Parallelized Orthogonal Matching Pursuit(OMP)} 
+	\label{alg3}
+	\begin{algorithmic}
+		\STATE \textbf{Input}: Dictionary \(\mathbf{D_0}\), batch of signals \(X = \{x_i\}\), target sparsity \(T\)   
+		
+		\STATE \textbf{Output}: Sparse Representations \(\Gamma\) 
+		
+		\STATE \textbf{Init} Set \(I\leftarrow\{\},\,R\leftarrow X,\Gamma\leftarrow0\)
+		
+		\FOR {\(i=1,\dots,T\)}
+		\STATE \(\mathbf{K}\leftarrow \mathbf{D}R \)
+		\STATE \(k^* \leftarrow \max{\{\mathbf{K}\}}\)
+		\STATE \(I \leftarrow (I,k^*)\)
+		\STATE in batch solve \(x_i = \mathbf{D}_Ir_i\)
+		\STATE in batch compute \(r_i\leftarrow x_i - \mathbf{D}_I\gamma_I\) where \(R = {r_i}\)
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+\end{document}

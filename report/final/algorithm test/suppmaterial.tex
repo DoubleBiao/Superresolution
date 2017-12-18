@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% ICML 2017 EXAMPLE LATEX SUBMISSION FILE %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass{article}
+
+
+%\usepackage[style=numeric,backend=biber]{biblatex}
+%\addbibresource{MIMA.bib}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{amsmath}
+
+
+
+\begin{document} 
+
+
+\section{Appendix.B Persudo Code of Neural Q-Learning}
+\begin{algorithm}[H]
+	\caption{Asynchronous NAF - N collector threads and 1 trainer thread} 
+	\label{alg1}
+	\begin{algorithmic}
+		\STATE Initialize replay memory D and memory size N, training step M
+		\STATE Initialize Q value approximator network weights with random values \(\omega\)
+		\STATE Initialize the last experience number to train \(EXP\)
+		\STATE Initialize Training batch size \(L\)
+		\FOR {\(\mathrm{step}=1,M\)}
+			\STATE \textbackslash\textbackslash collect experience
+			\STATE action \(a_t = \epsilon-\mathrm{greedy}(actionlist)\)
+			\STATE execute \(a_t\) and observe state \(s_{t+1}\) and reward \(r_t\)
+			\STATE append \((s_t,a_t,r_t,s_{t+1})\) into memory D
+			\STATE \(s_{t} = s_{t+1}\)
+	        \IF{\(\mathrm{step}>EXP\)} 
+		        \STATE  randomly sample a batch of transitions\((s_i,a_i,r_i,s_{i+1})\) from replay memory D
+		        \STATE  \(y_i=r_i + \gamma\max_a'Q(s_{i+1},a'|\omega)\)
+		        \STATE train Q value approximator with\(y_i,s_i\) pair batch
+		    \ENDIF
+        
+		\ENDFOR
+
+		\FOR{t=1,T}
+		\STATE Execute \(\boldsymbol{u}_t\) and observe \(r_t\) and \(\boldsymbol{x}_{t+1}\)
+
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+In our experiments, we set training step \(M = 30000\). We build a 5-layer feedforward network to serve as the Q-value approximator, the size of each layer is: 135,270,108,52,8. Gredient descent is used to train the network. 
+
+
+\end{document} 
+
+

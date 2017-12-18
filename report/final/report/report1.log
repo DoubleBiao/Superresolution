@@ -1,0 +1,765 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.30)  18 DEC 2017 05:02
+entering extended mode
+**./report1.tex
+(report1.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(cccconf.cls
+Document Class: cccconf 2010/02/10
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\preprint\balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen103
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\psnfss\times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\graphics\graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(F:\LaTeX\MikTeXExepanded\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen106
+\Gm@wd@mp=\dimen107
+\Gm@odd@mp=\dimen108
+\Gm@even@mp=\dimen109
+\Gm@layoutwidth=\dimen110
+\Gm@layoutheight=\dimen111
+\Gm@layouthoffset=\dimen112
+\Gm@layoutvoffset=\dimen113
+\Gm@dimlist=\toks15
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\geometry\geometry.cfg))
+(F:\LaTeX\MikTeXExepanded\tex\latex\tools\indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+\titleb@x=\box26
+\c@affno=\count91
+\@afflist=\toks16
+\@abstract=\box27
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen114
+))
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen115
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count104
+)
+\c@KVtest=\count105
+\sf@farskip=\skip46
+\sf@captopadj=\dimen130
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count106
+\c@subfigure@save=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@subtable@save=\count110
+\c@lotdepth=\count111
+\sf@top=\skip49
+\sf@bottom=\skip50
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\oberdiek\epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\oberdiek\epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\oberdiek\grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(F:\LaTeX\MikTeXExepanded\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(F:\LaTeX\MikTeXExepanded\tex\generic\oberdiek\pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+(F:\LaTeX\MikTeXExepanded\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen131
+\lightrulewidth=\dimen132
+\cmidrulewidth=\dimen133
+\belowrulesep=\dimen134
+\belowbottomsep=\dimen135
+\aboverulesep=\dimen136
+\abovetopsep=\dimen137
+\cmidrulesep=\dimen138
+\cmidrulekern=\dimen139
+\defaultaddspace=\dimen140
+\@cmidla=\count112
+\@cmidlb=\count113
+\@aboverulesep=\dimen141
+\@belowrulesep=\dimen142
+\@thisruleclass=\count114
+\@lastruleclass=\count115
+\@thisrulewidth=\dimen143
+)
+(F:\LaTeX\MikTeXExepanded\tex\generic\babel\babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(F:\LaTeX\MikTeXExepanded\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\babel-english\english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(F:\LaTeX\MikTeXExepanded\tex\generic\babel\babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count116
+\U@D=\dimen144
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\babel-english\english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+))
+
+Package Babel Warning: The package option `english' should not be used
+(Babel)                with a more specific one (like `american') on input line
+ 8.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks22
+\float@box=\box30
+\@float@everytoks=\toks23
+\@floatcapt=\box31
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks24
+\c@algorithm=\count118
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count119
+\c@ALC@line=\count120
+\c@ALC@rem=\count121
+\c@ALC@depth=\count122
+\ALC@tlm=\skip51
+\algorithmicindent=\skip52
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\iftex\iftex.sty
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count123
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count124
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(F:\LaTeX\MikTeXExepanded\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(F:\LaTeX\MikTeXExepanded\tex\latex\xstring\xstring.sty
+(F:\LaTeX\MikTeXExepanded\tex\generic\xstring\xstring.tex
+\@xs@message=\write3
+\integerpart=\count125
+\decimalpart=\count126
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count127
+\c@listtotal=\count128
+\c@listcount=\count129
+\c@liststart=\count130
+\c@liststop=\count131
+\c@citecount=\count132
+\c@citetotal=\count133
+\c@multicitecount=\count134
+\c@multicitetotal=\count135
+\c@instcount=\count136
+\c@maxnames=\count137
+\c@minnames=\count138
+\c@maxitems=\count139
+\c@minitems=\count140
+\c@citecounter=\count141
+\c@savedcitecounter=\count142
+\c@uniquelist=\count143
+\c@uniquename=\count144
+\c@refsection=\count145
+\c@refsegment=\count146
+\c@maxextratitle=\count147
+\c@maxextratitleyear=\count148
+\c@maxextrayear=\count149
+\c@maxextraalpha=\count150
+\c@abbrvpenalty=\count151
+\c@highnamepenalty=\count152
+\c@lownamepenalty=\count153
+\c@maxparens=\count154
+\c@parenlevel=\count155
+\blx@tempcnta=\count156
+\blx@tempcntb=\count157
+\blx@tempcntc=\count158
+\blx@maxsection=\count159
+\blx@maxsegment@0=\count160
+\blx@notetype=\count161
+\blx@parenlevel@text=\count162
+\blx@parenlevel@foot=\count163
+\blx@sectionciteorder@0=\count164
+\labelnumberwidth=\skip53
+\labelalphawidth=\skip54
+\biblabelsep=\skip55
+\bibitemsep=\skip56
+\bibnamesep=\skip57
+\bibinitsep=\skip58
+\bibparsep=\skip59
+\bibhang=\skip60
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count165
+\c@maxcomprange=\count166
+\c@mincompwidth=\count167
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count168
+\c@savedafterword=\count169
+\c@annotator=\count170
+\c@savedannotator=\count171
+\c@author=\count172
+\c@savedauthor=\count173
+\c@bookauthor=\count174
+\c@savedbookauthor=\count175
+\c@commentator=\count176
+\c@savedcommentator=\count177
+\c@editor=\count178
+\c@savededitor=\count179
+\c@editora=\count180
+\c@savededitora=\count181
+\c@editorb=\count182
+\c@savededitorb=\count183
+\c@editorc=\count184
+\c@savededitorc=\count185
+\c@foreword=\count186
+\c@savedforeword=\count187
+\c@holder=\count188
+\c@savedholder=\count189
+\c@introduction=\count190
+\c@savedintroduction=\count191
+\c@namea=\count192
+\c@savednamea=\count193
+\c@nameb=\count194
+\c@savednameb=\count195
+\c@namec=\count196
+\c@savednamec=\count197
+\c@translator=\count198
+\c@savedtranslator=\count199
+\c@shortauthor=\count266
+\c@savedshortauthor=\count267
+\c@shorteditor=\count268
+\c@savedshorteditor=\count269
+\c@labelname=\count270
+\c@savedlabelname=\count271
+\c@institution=\count272
+\c@savedinstitution=\count273
+\c@lista=\count274
+\c@savedlista=\count275
+\c@listb=\count276
+\c@savedlistb=\count277
+\c@listc=\count278
+\c@savedlistc=\count279
+\c@listd=\count280
+\c@savedlistd=\count281
+\c@liste=\count282
+\c@savedliste=\count283
+\c@listf=\count284
+\c@savedlistf=\count285
+\c@location=\count286
+\c@savedlocation=\count287
+\c@organization=\count288
+\c@savedorganization=\count289
+\c@origlocation=\count290
+\c@savedoriglocation=\count291
+\c@origpublisher=\count292
+\c@savedorigpublisher=\count293
+\c@publisher=\count294
+\c@savedpublisher=\count295
+\c@language=\count296
+\c@savedlanguage=\count297
+\c@pageref=\count298
+\c@savedpageref=\count299
+\shorthandwidth=\skip61
+\shortjournalwidth=\skip62
+\shortserieswidth=\skip63
+\shorttitlewidth=\skip64
+\shortauthorwidth=\skip65
+\shorteditorwidth=\skip66
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\blx-compat.def
+File: blx-compat.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\biblatex.def
+File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count300
+\c@textcitetotal=\count301
+\c@textcitemaxnames=\count302
+\c@biburlnumpenalty=\count303
+\c@biburlucpenalty=\count304
+\c@biburllcpenalty=\count305
+\c@smartand=\count306
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\bbx\numeric.bbx
+File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\bbx\standard.bbx
+File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count307
+\c@bbx:relatedtotal=\count308
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\cbx\numeric.cbx
+File: numeric.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\lbx\american.lbx
+File: american.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\biblatex\lbx\english.lbx
+File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count309
+\@quotereset=\count310
+(report1.aux)
+\openout1 = `report1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 15.
+ (F:\LaTeX\MikTeXExepanded\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(F:\LaTeX\MikTeXExepanded\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count311
+\scratchdimen=\dimen145
+\scratchbox=\box32
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen146
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks26
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(48.36958pt, 500.7687pt, 48.36958pt)
+* v-part:(T,H,B)=(56.9055pt, 725.54538pt, 62.59596pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=500.7687pt
+* \textheight=725.54538pt
+* \oddsidemargin=-23.9004pt
+* \evensidemargin=-23.9004pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=19.91684pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout4 = `report1.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'report1.bbl' found.
+(report1.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                banger_opencl_2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                noauthor_parallel_nodate
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                noauthor_thread_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                noauthor_process_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                noauthor_task_2017
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<2.png, id=11, 365.11406pt x 386.94562pt>
+File: 2.png Graphic file (type png)
+ <use 2.png>
+Package pdftex.def Info: 2.png used on input line 89.
+(pdftex.def)             Requested size: 210.0pt x 222.55695pt.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 117.
+
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+ [2 <./2.png>]
+<3.png, id=29, 471.26062pt x 400.49625pt>
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 159.
+(pdftex.def)             Requested size: 210.0pt x 178.46776pt.
+
+Underfull \hbox (badness 6725) in paragraph at lines 171--171
+[]\OT1/ptm/b/n/10 Algorithm 3 \OT1/ptm/m/n/10 Par-al-lelized Or-thog-o-nal Matc
+h-ing Pur-
+ []
+
+<7.png, id=30, 256.70906pt x 103.88812pt>
+File: 7.png Graphic file (type png)
+ <use 7.png>
+Package pdftex.def Info: 7.png used on input line 210.
+(pdftex.def)             Requested size: 210.0pt x 84.9859pt.
+
+<4.png, id=31, 705.38531pt x 371.88937pt>
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 223.
+(pdftex.def)             Requested size: 450.0pt x 237.24799pt.
+ [3 <./3.png> <./7.png>]
+<5.png, id=38, 403.5075pt x 376.40625pt>
+File: 5.png Graphic file (type png)
+ <use 5.png>
+Package pdftex.def Info: 5.png used on input line 236.
+(pdftex.def)             Requested size: 400.0pt x 373.13727pt.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 288.
+
+
+(F:\LaTeX\MikTeXExepanded\tex\latex\psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [4] [5 <./4.png> <./5.png>] [6
+
+] (report1.aux)
+Package logreq Info: Writing requests to 'report1.run.xml'.
+\openout1 = `report1.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10703 strings out of 493335
+ 176326 string characters out of 3140558
+ 607503 words of memory out of 3000000
+ 14057 multiletter control sequences out of 15000+200000
+ 25823 words of font info for 53 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,7n,45p,1207b,1428s stack positions out of 5000i,500n,10000p,200000b,50000s
+{F:/LaTeX/MikTeXExepanded/fonts/enc/dvips/fontname/8r.enc}<F:/LaTeX/MikTeXExe
+panded/fonts/type1/public/amsfonts/cm/cmbx10.pfb><F:/LaTeX/MikTeXExepanded/font
+s/type1/public/amsfonts/cm/cmbx6.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/publ
+ic/amsfonts/cm/cmbx9.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/
+cm/cmex10.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmmi5.pfb><F:/LaTeX
+/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmmi6.pfb><F:/LaTeX/MikTeXExepa
+nded/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/LaTeX/MikTeXExepanded/fonts/t
+ype1/public/amsfonts/cm/cmmi9.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/
+LaTeX/MikTeXExepanded/fonts/type1/public/amsfonts/cm/cmr9.pfb><F:/LaTeX/MikTeXE
+xepanded/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/LaTeX/MikTeXExepanded/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/pu
+blic/amsfonts/cm/cmsy9.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/urw/courier/uc
+rr8a.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/urw/times/utmb8a.pfb><F:/LaTeX/M
+ikTeXExepanded/fonts/type1/urw/times/utmr8a.pfb><F:/LaTeX/MikTeXExepanded/fonts
+/type1/urw/times/utmr8a.pfb><F:/LaTeX/MikTeXExepanded/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on report1.pdf (6 pages, 396094 bytes).
+PDF statistics:
+ 117 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
