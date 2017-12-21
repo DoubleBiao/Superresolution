@@ -1,4 +1,10 @@
 # Superresolution
 Superresolution based on sparse representation
 
-I can also edit the code~
+Group memeber:
+
+Yameng Xiao
+Xiaotong Qiu
+Xiaotian Hu
+
+
